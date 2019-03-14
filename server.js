@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 
 class Application {
   static start() {
-    new Application();
+    return new Application();
   }
 
   constructor() {
