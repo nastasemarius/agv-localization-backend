@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -19,7 +20,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && webpack --mode development",
-    "start": "npm run build && node ./dist/server.js"
+    "start": "npm run build && node ./dist/server.js",
+    "heroku-prebuild": "npm install --dev"
   },
   "keywords": [
     "agv",

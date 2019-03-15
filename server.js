@@ -1,5 +1,6 @@
 import path from "path";
 import express from "express";
+import * as _ from "lodash";
 
 const DIST_DIR = __dirname;
 const HTML_FILE = path.join(DIST_DIR, "index.html");
