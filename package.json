@@ -19,9 +19,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && webpack --mode development",
+    "build": "rm -rf dist && webpack --mode production",
     "start": "node ./dist/server.js",
-    "heroku-prebuild": "npm install --dev"
+    "heroku-prebuild": "npm install --dev",
+    "dev": "rm -rf dist && webpack --mode development && npm run start"
   },
   "keywords": [
     "agv",
